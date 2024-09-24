@@ -24,7 +24,7 @@ public class SFruitStore {
         double pay;
         String again;
 
-        double[] prices = {15.00, 35.00, 25.00, 500.00, 99.00}; 
+        double[] prices = {10.00, 12.00, 15.00, 20.00, 30.00}; 
         String[] items = {"Apple", "Orange", "Grapes", "Manggo", "Banana"};
 
         do {

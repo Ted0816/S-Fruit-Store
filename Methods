@@ -1,0 +1,68 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package new2;
+
+import static java.lang.Double.max;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author GERALDINO_COMP111
+ */
+public class New2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+   
+     Scanner A = new Scanner(System.in);
+        int arrayLength = 0;
+        
+        System.out.println("Input how many array you want");
+     arrayLength = A.nextInt();
+        double[] myArray = new double[arrayLength];
+        
+        //Min
+        double Min = Double.MAX_VALUE;
+        
+        //Max
+        double Max = Double.MIN_VALUE;
+        
+       for (int i = 0; i < arrayLength; i++) {
+         System.out.println("#" + (i+1) + ":");
+         myArray[i] = A.nextDouble();
+           System.out.println("");
+           
+       //Sum
+       double Sum = 0;
+        for(int a = 0; a < myArray.length; a++)
+       { 
+           Sum = Sum + myArray[a];
+       }
+         //Average
+         double Average = 0;
+         Average = Sum/arrayLength;
+       //Min
+              for (int a = 0; a< arrayLength; a++) 
+              {
+              Min =Math.min(Min, myArray[a]);
+              }
+       //Max
+       for (int a = 0; a< arrayLength; a++) 
+              {
+              Max =Math.max(Max, myArray[a]);
+              }
+       
+       //Outputs
+            System.out.println("The sum is: " + Sum);
+            System.out.println("The Average is: " + Average);
+            System.out.println("The Minimum is: " + Min);
+            System.out.println("The Maximum is: " + Max);
+        }
+    }
+
+}
